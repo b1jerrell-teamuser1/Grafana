@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "datasource",
+  "name": "Linear B Data Export V2",
+  "id": "linearb-linearbdataexportv2-datasource",
+  "metrics": true,
+  "info": {
+    "description": "This plugin allows users to retreive data from the metrics section of the linear b platform",
+    "author": {
+      "name": "Linear b"
+    },
+    "keywords": ["datasource"],
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "dependencies": {
+    "grafanaDependency": ">=9.5.3",
+    "plugins": []
+  }
+}
