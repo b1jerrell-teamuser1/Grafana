@@ -23,4 +23,21 @@
     "grafanaDependency": ">=9.5.3",
     "plugins": []
   }
+  "routes": [
+  {
+    "path": "linearb",
+    "url": "https://public-api.linearb.io/api/v2/exporter/measurements",
+    "headers": [
+      {
+        "name": "x-api-key",
+        "content": "{{ .SecureJsonData.apiToken }}"
+      }
+      {
+        "name": "content-type",
+        "content": "application/json"
+      }
+    ]
+  }
+]
+
 }
